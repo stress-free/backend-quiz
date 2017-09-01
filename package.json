@@ -1,0 +1,44 @@
+{
+  "name": "backend-quiz",
+  "version": "1.0.0",
+  "description": "Backend quiz for CarDash",
+  "scripts": {
+    "dev": "NODE_PORT=3000 NODE_ENV=development nodemon --exec node --inspect scripts/dev.js",
+    "test": "jest --verbose"
+  },
+  "keywords": [],
+  "author": "Evan Rosenfeld <evan@cardash.com>",
+  "license": "SEE LICENSE IN LICENSE",
+  "dependencies": {
+    "babel-cli": "6.24.1",
+    "babel-core": "6.24.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-stage-2": "6.24.1",
+    "babel-register": "6.24.1",
+    "babel-runtime": "6.23.0",
+    "body-parser": "^1.17.2",
+    "compression": "^1.6.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.3",
+    "express-graphql": "^0.6.6",
+    "faker": "^4.1.0",
+    "graphql": "^0.10.5",
+    "graphql-fields": "^1.0.2",
+    "graphql-server-express": "^1.0.2",
+    "graphql-tools": "^1.1.0",
+    "lodash": "^4.17.4",
+    "merge-graphql-schemas": "^1.0.0",
+    "pluralize": "^5.0.0"
+  },
+  "devDependencies": {
+    "babel-helpers": "^6.24.1",
+    "babel-jest": "^19.0.0",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.5.2",
+    "jest": "^19.0.2",
+    "nodemon": "^1.11.0"
+  }
+}
