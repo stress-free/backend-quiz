@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Backend quiz for CarDash",
   "scripts": {
-    "dev": "NODE_PORT=3010 NODE_ENV=development nodemon --exec node --inspect scripts/dev.js",
+    "dev": "NODE_PORT=3000 NODE_ENV=development nodemon --exec node --inspect scripts/dev.js",
     "test": "jest --verbose"
   },
   "keywords": [],

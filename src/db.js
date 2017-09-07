@@ -19,8 +19,8 @@ now we dont' save any changes to data.js, just keep it in our virtual DB
       Object.keys(datum).forEach(key => item[key] = datum[key])
     } else {
       item = {
-        id: data.length + 1, // should use some library like uuid to generate ID
         ...datum,
+        id: data.length + 1, // should use some library like uuid to generate ID
       };
       data.push(item)
     }

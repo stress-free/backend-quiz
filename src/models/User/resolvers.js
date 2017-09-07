@@ -14,6 +14,6 @@ export default {
     vehicles: (obj, args, context) => {
       return db.get('Vehicle').filter(vehicle => vehicle.userId === obj.id)
     },
-    fullName: obj => `${obj.firstName} ${obj.lastName}`,
+    displayName: obj => `${obj.firstName} ${obj.lastName}`,
   },
 }

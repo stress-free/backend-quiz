@@ -19,7 +19,7 @@ export const Resolvers = {
       }
     },
     createAndUpdate: (Model, validators) => async (unusedFirstParameter, { input }) => {
-      validate(validators, input)
+      validators && validate(validators, input)
       const { id } = await db.set(Model.name, input)
       return { id }
     }
