@@ -8,5 +8,6 @@ type Order {
 
 type Query {
   orders: [Order]
+  order(id: Int!): Order
 }
 `
