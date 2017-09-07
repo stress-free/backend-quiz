@@ -22,7 +22,7 @@ type Query {
 }
 
 type UpdatedVehiclesPayload {
-  id: Int!
+  vehicle: Vehicle!
 }
 
 type Mutation {

@@ -20,8 +20,9 @@ export const Resolvers = {
     },
     createAndUpdate: (Model, validators) => async (unusedFirstParameter, { input }) => {
       validators && validate(validators, input)
-      const { id } = await db.set(Model.name, input)
-      return { id }
+      const item = await db.set(Model.name, input)
+      const name = Model.name.toLocaleLowerCase();
+      return { [name]: item }
     }
   }
 }
